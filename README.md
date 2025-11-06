@@ -1,3 +1,5 @@
+[![build](https://github.com/tonich-2/hexlet-ci-app/actions/workflows/build.yml/badge.svg)](https://github.com/tonich-2/hexlet-ci-app/actions/workflows/build.yml)
+
 # Example app for CI Hexlet course
 
 Starting boilerplate of [Strapi](https://strapi.io/) application
