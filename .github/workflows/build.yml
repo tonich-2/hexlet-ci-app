@@ -10,18 +10,16 @@ jobs:
       - uses: actions/checkout@v4
       # Устанавливаем Node.js
       - uses: actions/setup-node@v4
-      # Ставим зависимости
-      - run: npm install
-      # Запускаем линтер
-      - run: npm run lint
-      # Запускаем тесты
-      # у шагов может быть имя, иногда это помогает отладке
+      # У шагов может быть имя, иногда это помогает отладке
       # имя выводится на Github при просмотре сборки
+      # Ставим зависимости
       - name: run setup
         run: make setup # name и run относятся к одной задаче, поэтому дефис ставится только перед name
-      - name: run tests
-        run: make test
+      # Запускаем линтер
       - name: run lint
         run: make lint
+      # Запускаем тесты
+      - name: run tests
+        run: make test
       - name: Print Hello from Hexlet
         uses: hexlet-components/hello-from-hexlet-action@release
