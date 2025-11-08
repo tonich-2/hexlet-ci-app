@@ -23,3 +23,5 @@ jobs:
         run: make test
       - name: run lint
         run: make lint
+      - name: Print Hello from Hexlet
+        uses: hexlet-components/hello-from-hexlet-action@release
